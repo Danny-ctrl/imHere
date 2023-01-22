@@ -6,6 +6,9 @@ export function Home() {
   function handleParticipantAdd() {
 
   }
+  function handleParticipantRemove() {
+
+  }
   return (
     <View style={styles.container}>
       <Text style={styles.eventName}>
@@ -28,8 +31,7 @@ export function Home() {
           </Text>
         </TouchableOpacity>
       </View>
-      <Participant />
-      <Participant />
+      <Participant name="Daniele" onRemove={handleParticipantRemove} />
     </View>
   )
 }
